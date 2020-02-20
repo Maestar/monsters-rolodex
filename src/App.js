@@ -1,3 +1,4 @@
+//React note: If something doesn't require the state or lifecycle methods, it should probably be a component.
 import React, { Component } from 'react';
 import './App.css';
 
@@ -29,6 +30,7 @@ class App extends Component {
 
   handleChange = (e) => {
     //the arrow function allows us to bind the this context to the app
+    // thats because arrow functions have lexical scoping: their context is where they are created not whats inside them.
     this.setState({ searchField: e.target.value})
 
   }
