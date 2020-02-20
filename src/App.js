@@ -46,6 +46,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h1>Monsters Rolodex</h1>
         <SearchBox 
         //placeholder and handleChange are 'props' and their contents are passed down to the search component
           placeholder='search Monsters' 
